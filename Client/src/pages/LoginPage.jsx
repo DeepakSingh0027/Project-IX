@@ -27,6 +27,7 @@ const LoginPage = () => {
       password,
       bio,
     });
+    navigate("/loading");
   };
 
   return (
