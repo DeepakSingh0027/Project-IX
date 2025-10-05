@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+* {
+  font-family: "Figtree", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-shine {
+  background: linear-gradient(
+    120deg,
+    rgb(0, 0, 0) 45%,
+    rgba(255, 255, 255, 0.612) 48%,
+    rgba(0, 0, 0) 55%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
