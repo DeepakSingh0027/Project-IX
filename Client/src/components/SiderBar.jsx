@@ -29,7 +29,7 @@ const SiderBar = () => {
   }, [onlineUsers]);
   return (
     <div
-      className={`bg-[#8185B2]/10 h-full p-5 rounded-r-xl overflow-y-scroll ${
+      className={`bg-[#8185B2]/10 h-full p-5 rounded-r-xl ${
         selectedUser ? "max-md:hidden" : ""
       }`}
     >
@@ -72,7 +72,7 @@ const SiderBar = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col pt-3">
+      <div className="flex flex-col pt-3 overflow-y-scroll gap-2 max-h-[60vh]">
         {filteredUsers.map((user, index) => (
           <div
             onClick={() => {
